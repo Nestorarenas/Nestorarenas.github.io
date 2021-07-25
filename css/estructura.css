@@ -1,0 +1,142 @@
+:root {/*con root se crea variables*/
+	--color-primario:#060505 ;
+	  
+	--color-oscuro:#171414;
+	--color-blanco: #fff;
+	--color-article:#f39c12;
+
+}
+* {
+	margin: 0;
+	padding: 0;
+	 
+}
+.contenedor {
+	background:var(--color-oscuro);
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+body {
+	 
+	 /*background: url(../imagenes/cafe1.jpg);*/
+	 background: #131010;
+	 background-position: center;
+	 background-attachment: fixed;
+	font-family: sans-serif;
+	 
+}
+  
+header, .main {
+	 
+	width:90%;
+	max-width: 1200px;
+	margin: auto;
+ 
+
+}
+header{
+	position: fixed;
+}
+header nav {
+	background:  var(--color-primario) ;
+	overflow: hidden; /* nos limpia el float left */
+	/*padding: 15px 0px;*/
+	font-size: 19px;
+	/*position: fixed;*/
+	border-radius: 5px;
+	   
+	 
+}
+header nav ul {
+	list-style: none;
+}
+header nav ul li{
+	float: left; 
+
+}
+header nav ul li a {
+	padding: 40px 12px;
+	 display: block; /*si no le ponemos esto, no funciona el padding*/
+	 color:var(--color-blanco);
+	 text-decoration: none;
+}
+header nav ul li a:hover {
+	 
+	  color:#423F3F;
+	}
+
+.menu li:first-child {
+	 	 margin-right: 100px;
+	 	 margin-left: 10px;
+		 
+
+	}
+.menu form {
+	 
+	 
+	color:var(--color-blanco);
+}
+.menu form input {
+	border-radius: 2px solid var(--color-blanco);
+}
+.menu form:hover {
+	color:#423F3F;
+	border-radius: 2px solid var(--color-article);
+}
+  
+ 
+.main .articles {
+	width: 70%;
+	float: left;
+	 
+	/*margin-right: 1.5%; *//*margen solo a la derecha*/
+
+}
+.main .articles article {
+	padding: 20px;
+	/*background:var(--color-oscuro);*/
+	/*margin-bottom: 20px ;*/
+	color: var(--color-article);
+
+}
+.main .articles article h2 {
+	  
+	  font-size: 40px;
+	 
+}
+
+.main div {
+	/*background:var(--color-oscuro);*/
+}
+.main div h3{
+	color:var(--color-blanco);
+}
+.main div img {
+	width:160px ;
+	display: inline-block;
+	border: 5px hidden white;
+	padding: 20px; 
+
+}
+.main div img:hover {
+	border: 5px solid yellow;
+}
+aside {
+	width: 30%;
+	/*background:var(--color-oscuro) ;*/
+	float: left;
+	/*padding: 20px;*/
+	box-sizing: border-box; /* coloca el padding y no altera el 30% */
+	color:var(--color-blanco);
+	}
+
+
+footer {
+	background: var(--color-primario);
+	color:var(--color-blanco);
+	clear: both;
+	padding: 60px 0;
+	text-align: center;
+
+}
